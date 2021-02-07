@@ -5,7 +5,7 @@ class User(AbstractUser):
     pass
 
 class Lead(models.Model):
-    fisrt_name = models.CharField(max_length=20)
+    first_name = models.CharField(max_length=20)
     last_name = models.CharField(max_length=20)
     age = models.IntegerField(default=0)
     agent = models.ForeignKey("Agent", on_delete=models.CASCADE)
